@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Gothic&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Carros</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <img src="assets/img/logo.png" alt="">
+        <nav>
+            <ul>
+                <li><a href="#" id="homeButton">Home</a></li>
+                <li><a href="#gallery" id="">Armas</a></li>
+                <li><a href="#mensagem">Fale conosco</a></li>
+                <a href="https://danielsthefano.github.io/landig-page-atualizado/" id="">Outros jogos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- https://www.alainclass.com/cars/ -->
+    <section class="container">
+        <div class="list">
+            <div class="item active itemAnime">
+                <div class="car-img">
+                    <img src="assets/img/terraria.png" alt="carro 1"  height="360" width="360" onclick="openModal('assets/img/terraria.png')">
+                </div>
+                <div class="content">
+                    <p class="car-information">Terraria</p>
+                    <h2></h2>
+                    <p class="description">Terraria é um jogo de ação e aventura 2D onde os jogadores exploram um mundo gerado aleatoriamente, coletando recursos, criando itens, construindo estruturas e enfrentando inimigos e chefes. Com foco em exploração e criatividade, o jogo oferece uma grande liberdade para personalizar o ambiente e enfrentar desafios.A seguir estará  as duas armas mais fortes do terraria.</p>
+                    
+                    <!-- information no btn sem -->
+                </div>
+            </div>
+            
+            <!-- outros 2 itens so depois do css pra nao ficar ruim os testes... -->
+            <div class="item">
+                <div class="car-img">
+                    <img src="assets/img/foto.webp" alt="carro 1">
+                    <!-- <div class="carModelContainer" style="width: 100%; height: 100%;"></div> -->
+                </div>
+                <div class="content">
+                    <p class="car-information">Construções no Terraria</p>
+                    <h2></h2>
+                    <p class="description">No Terraria, a construção é um aspecto central do jogo, oferecendo grande liberdade criativa. Os jogadores podem criar casas para abrigar NPCs, arenas para chefes, cidades e estruturas funcionais como elevadores e sistemas de transporte. Há uma vasta variedade de materiais (madeira, pedra, metal, etc.) que permitem personalização estética e funcional.</p>
+                    
+                </div>
+            </div>
+
+            <!-- <div class="item">
+                <div class="car-img">
+                    <img src="assets/img/gtr-removebg-preview.png" alt="carro 1">
+                    </div>
+                <div class="content">
+                    <p class="car-information">Ferrari 488 Spider</p>
+                    <h2>Ferrari</h2>
+                    <p class="description">A Ferrari 488 Spider é a perfeita combinação de desempenho extremo e design sofisticado. Equipado com um motor V8 biturbo de 3,9 litros, entrega uma potência de 670 cv, acelerando de 0 a 100 km/h em apenas 3 segundos.</p>
+                    <button class="information">Saiba Mais</button>
+                </div>
+            </div> -->
+
+            <div class="item">
+                <div class="car-img">
+                    <img src="assets/img/plantera.jpg" alt="carro 1">
+                    <!-- <div class="carModelContainer" style="width: 100%; height: 100%;"></div> -->
+                </div>
+                <div class="content">
+                    <p class="car-information">Lutas no Terraria</p>
+                    <h2></h2>
+                    <p class="description">As lutas em Terraria variam entre inimigos comuns, chefes e eventos especiais. Os inimigos regulares aparecem em biomas diferentes e exigem estratégias básicas para serem derrotados. Já os chefes são desafios mais complexos, com altas resistências e habilidades especiais, como o Eye of Cthulhu, Skeletron e Moon Lord, que exigem preparação, boas armas e táticas de movimentação.
+
+                      Além disso, há eventos de invasão (como Blood Moon e Goblin Invasion) que trazem hordas de inimigos para enfrentar. No geral, as lutas combinam ação intensa, estratégia e necessidade de personalização de equipamentos, e são um dos maiores atrativos do jogo.</p>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="arrows">
+            <button id="prev" class="button">←</button>
+            <button id="next" class="button">→</button>
+            <!-- position: absolute;
+    top: 70%;
+    transform: translateY(-50%);
+    width: 20%;
+    height: 5%;
+    left: 10%;
+    border-radius: 70px;
+    border-bottom: 2500px;
+    font-family: fantasy;
+    font-size: 30px;
+    box-sizing: border-box; -->
+        </div>
+        <div class="indicators">
+            <div class="number">01</div>
+            <ul>
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </section>
+    
+    
+    <section id="gallery" class="grid-one ola " >
+        <div class="main-content grid-one-content">
+          <!-- div estava errada correção -->
+          <h2 class="grid-main-heading">Um pouco mais sobre</h2>
+          <p class="grid-description">clique em uma das imagens</p>
+          <div class="grid">
+            <div class="gallery-img">
+                <img src="assets/img/Untitled image (2).png" height="360" width="360" alt=""
+                onclick="openModal('assets/img/Untitled image (2).png')">
+                <h3>Por quê eu dveria uzar a Zenith?</h3>
+                <p>A Zenith em Terraria é uma das armas mais poderosas, com os seguintes benefícios principais:
+
+                  Dano alto: Possui um dano base de 190 e pode ser combinado com outras espadas para aumentar ainda mais o poder de ataque.
+                  Ataques múltiplos: Invoca várias espadas que atingem múltiplos inimigos, tornando-a eficaz contra chefes e grupos de inimigos.
+                  Visual impressionante: O efeito visual de várias espadas atacando ao mesmo tempo é épico.
+                  Requer conquistas no jogo: A Zenith é obtida ao reunir várias espadas poderosas, sendo um símbolo de grande conquista.
+                  Alta velocidade de ataque: A arma tem uma boa velocidade de ataque, maximizando o dano por segundo.
+                  Ideal para chefes e Hardmode: É uma das melhores armas para enfrentar os desafios finais do jogo.
+                  Em resumo, a Zenith é uma arma extremamente eficaz e visualmente impactante, ideal para quem busca dominar as batalhas mais difíceis de Terraria.</p>
+            </div>
+            <div class="gallery-img">
+                <img src="assets/img/Untitled image.png" height="360" width="360" alt=""
+                onclick="openModal('assets/img/Untitled image.png')">
+                <h3>Por quê eu dveria uzar a Zenith?</h3>
+                <p>O Último Prisma em Terraria é uma arma mágica extremamente poderosa, com os seguintes benefícios principais:
+
+                  Dano muito alto: Causa 200 de dano por rajada e pode resultar em um grande total de dano contínuo.
+                  Ataque contínuo: Dispara um feixe de luz que causa dano enquanto está em contato com o inimigo.
+                  Alcance longo e precisão: Ideal para atacar inimigos à distância com alta precisão.
+                  Eficaz contra múltiplos inimigos: O feixe atinge vários inimigos em linha reta.
+                  Potencial de dano alto com buffs: Se combinado com poções de aumento de dano, seu poder fica ainda mais devastador.
+                  Visual impressionante: O feixe de luz tem um efeito visual marcante.
+                  Obtido após derrotar o Moon Lord, um dos maiores desafios do jogo, tornando-a uma arma de prestígio.
+                  Em resumo, o Último Prisma é uma das melhores armas mágicas, perfeita para combate de longo alcance, eficaz contra chefes e inimigos, e com grande potencial de dano.
+                  
+                  
+                  
+                  </p>
+            </div>
+          </div> 
+        </div>
+      </section>
+    <section class="intro main-bg" id="mensagem">
+        <div class="main-content intro-content">
+            <div class="intro-text-content">
+              <h2>olá</h2>
+              <p>Caso ocorra algum problema no jogo ou com o site, informe-nos preenchendo os campos abaixo e nos diga sua
+                reclamação</p>
+            </div>
+            <div class="intro-img">
+              <img src="assets/img/" alt="">
+            </div>
+      
+            <div class="contact-form">
+              <form id="form">
+                <fieldset class="form-grid">
+                  <legend>Contate-nos</legend>
+      
+                  <div class="form-group">
+                    <label for="first-name">Primeiro nome</label>
+                    <input type="text" name="name" id="first-name" placeholder="Your first name" required>
+                  </div>
+      
+                  <div class="form-group">
+                    <label for="last-name">Segundo nome</label>
+                    <input type="text" name="sobrenome" id="last-name" placeholder="Your last name" required>
+                  </div>
+      
+                  <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="text" name="email" id="email" placeholder="Your e-mail" required>
+                  </div>
+      
+                  <div class="form-group full-width">
+                    <label for="message">Mensagem</label>
+                    <textarea name="message" id="message" rows="10" placeholder="Your message"></textarea>
+                  </div>
+      
+                  <div class="form-group full-width">
+                    <button type="submit">Send message</button>
+                  </div>
+                  
+                  
+                </fieldset>
+              </form>
+            </div>
+          </div>
+    </section>
+    <footer id="footer" class="footer white-bg">
+        <p><a href=""><span class="span"> &copy;</span> 2024 Site de Daniel Alves. Todos os
+            direitos reservados.</a></p>
+            
+      </footer>
+    <a class="back-to-top" href="#"></a>
+    <div class="modal" id="myModal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+      </div>
+  <script src="assets/js/script.js"></script>
+
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+        emailjs.init("V8WPWptUGdSrvYYpy");
+    })();
+</script>
+<script>
+    document.getElementById('form').addEventListener('submit', function (event) {
+        event.preventDefault();
+        emailjs.sendForm('service_45chyk8', 'template_rc2q9f7', this)
+            .then(function () {
+                alert('Email enviado com sucesso!');
+            }, function (error) {
+                alert('Erro ao enviar o email: ' + JSON.stringify(error));
+            });
+    });
+</script>
+</body>
+
+</html>
